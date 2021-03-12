@@ -1,0 +1,191 @@
+.header-wrapper{
+  background-color: #0D065A;
+}
+.title{
+  color: white;
+  margin: 0;
+  padding: 25px 0;
+}
+.no-player{
+font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 35px;
+  color: rgba(13, 6, 90, 0.7);
+}
+
+.description{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(13, 6, 90, 0.5);
+}
+
+.no-list-player{
+  text-align: center;
+  padding-top: 40px;
+  background: rgba(13, 6, 90, 0.05);
+  min-height: calc(100vh - 85px);
+}
+
+.add-button{
+  background: #BB691E;
+  border-radius: 3px;
+  padding: 8px 25px;
+  border: 1px solid #BB691E;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 29px;  
+  color: #0D065A;
+}
+
+.player-card{
+    background: #FFFFFF;
+    border: 1px solid #0D065A;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 30px auto;
+}
+
+.player-name{
+  border-bottom: 1px solid #0D065A;
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #0D065A;
+}
+
+.reset-button{
+  background: none;
+  border: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  color: #414FCE;
+  
+}
+
+.details-wrapper{
+  width: 100%;
+  margin-left: 40px;
+  margin-right: 16px;
+  margin-bottom: 50px;
+}
+
+.player-image{
+  margin: 15px;
+}
+
+.buttons-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.count-button, .score-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+.increment-button{
+  background: #D9FFCF;
+  border: 1px solid #73C57C;
+  box-sizing: border-box;
+  border-radius: 3px;
+  padding: 6px 15px;
+}
+
+.decrement-button{
+  background: #FFCFD8;
+  border: 1px solid #C573A9;
+  box-sizing: border-box;
+  border-radius: 3px;
+  padding: 5px 15px;
+}
+
+.inc-dec-button{
+  margin: 6px 0;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #0D065A;
+}
+
+.delete-button-wrapper{
+  display: flex;
+  justify-content: flex-end;
+  margin: 15px 0;
+}
+
+.delete-button{
+  background: none;
+  border: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #E32D2D;  
+}
+
+.score-wrapper{
+  align-items: flex-start;
+}
+
+.nr-of-score{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 75px;
+}
+
+
+.player-number{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  align-items: center;
+}
+
+.delete-all-button{
+  background-color: #E32D2D;
+  border: 1px solid #E32D2D;
+  border-radius: 3px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  padding: 8px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.total-player{
+  margin: 0;
+}

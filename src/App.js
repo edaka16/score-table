@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./css/App.css";
+import Header from "./components/Header";
+import { useState } from "react";
+import NoPlayerList from "./components/NoPlayerList";
+import PlayerList from "./components/PlayerList";
 
-function App() {
+const App = () => {
+  const [nr_of_players, setNr_of_players] = useState([]);
+  const [count, setCount] = useState(0);
+
+  const addPlayer = () => {
+    const newPlayer = {
+      id: count,
+      name: `Player: ${count}`,
+    };
+    setNr_of_players([...nr_of_players, newPlayer]);
+    setCount(count + 1);
+  };
+  const deleteAll = () => {
+    setNr_of_players([]);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      {nr_of_players && nr_of_players.length > 0 ? (
+        <PlayerList
+          nr_of_players={nr_of_players}
+          addPlayer={addPlayer}
+          deleteAll={deleteAll}
+          setNr_of_players={setNr_of_players}
+        />
+      ) : (
+        <NoPlayerList addPlayer={addPlayer} />
+      )}
     </div>
   );
-}
+};
 
 export default App;
